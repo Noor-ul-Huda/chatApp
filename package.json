@@ -1,0 +1,22 @@
+{
+  "name": "chat_circle_server",
+  "version": "1.0.0",
+  "description": "A social App for chatting and sharing images, audio, videos, etc",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cordova": "^5.4.1",
+    "express": "^4.10.2",
+    "mongojs": "^2.2.2",
+    "mysql": "^2.10.0",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "socket.io": "^1.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noor-ul-Huda <hudasiddiq76@gmail.com>",
+  "license": "ISC"
+}

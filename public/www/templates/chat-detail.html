@@ -1,0 +1,24 @@
+<ion-view view-title="New Message">
+  <ion-content ng-show="refresh()">
+       <header style="color:royalblue">
+       <h1 ng-model="receiver">{{receiver}}</h1>
+    </header>
+      <div style="height:75%">
+
+        <ul id="messages">
+
+        </ul>
+      </div>
+
+    <footer keyboard-attach class="bar-stable item-input-inset">
+      <label class="item-input-wrapper">
+          <i class="icon ion-edit"></i>
+        <input type="text"  ng-model="user.msgText" placeholder="Type your message" onsubmit="send(user)"/>
+       </label>
+
+    <button class="button button-clear" ng-click="send(user)">
+      Send
+    </button>
+    </footer>
+  </ion-content>
+</ion-view>

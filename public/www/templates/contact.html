@@ -1,0 +1,15 @@
+<ion-view view-title="contact">
+<ion-content class="padding">
+<div class="padding" ng-controller="ContactCtrl">
+<button class="button ion-arrow-left-c button-royal" ui-sref="app">
+Home</button>
+  <div class="list">
+
+    <ul>
+      <li ng-repeat="item in userList" ng-click="sendReceiver($event, item.Username)">{{item.Username}}</li>
+    </ul>
+  </div>
+</div>
+        </ion-content>
+
+</ion-view>

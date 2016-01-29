@@ -1,0 +1,20 @@
+<ion-view>
+    <ion-content class="padding">
+<div class="list" ng-controller="LoginCtrl">
+    <label class="item item-input ">
+<span class="input-label">Username</span>
+<input type="text" ng-model="user.displayName" name="username">
+</label>
+<label class="item item-input">
+<span class="input-label">Contact No</span>
+<input type="number" ng-model="user.phoneNumbers" name="email"minlength="11">
+</label>
+
+<div class="padding">
+<button ng-disabled="(!user.phoneNumbers|| !user.displayName)" ng-click="addUser()" class="button button-block buttonroyal" ui-sref="tab.chats">Sign In</button>
+<ion-nav-view name="tab-chats"></ion-nav-view>
+
+</div>
+</div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view title="Contact">
+        <ion-content>
+          <header keyboard-attach class="bar-stable item-input-inset">
+   <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search Contacts" />
+      </label>
+    <button class="button button-clear" ng-click>Search
+      </button>
+      </header>
+      <div class="list" >
+
+          <ul>
+            <li ng-repeat="item in userList" ng-click="sendReceiver($event, item)" ui-sref="app.chat-detail">{{item.displayName}}<br/> {{item.phoneNumbers[1]}}</li>
+          </ul>
+        </div>
+        </ion-content>
+      </ion-view>
